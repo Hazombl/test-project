@@ -1,0 +1,2 @@
+docker build --tag=DAPPMSTR02.local:31320/tomcat:9.9 .
+docker push DAPPMSTR02.local:31320/tomcat:9.9

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-nfs-tomcat
+spec:
+  storageClassName: nfs-client # this variable must match the helm nfs-subdir-external-provisioner's default!
+  accessModes:
+     - ReadWriteMany
+  resources:
+    requests:
+      storage: 10G
